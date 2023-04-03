@@ -32,6 +32,8 @@ public class OrderControllerInterfaceProxy implements OrderControllerV1 {
         return target.noLog();
         /**
          * noLog는 로그를 찍으면 안돼, 우리가 시나리오상 보안상 문제가 있어서 로그를 안 찍는 케이스다.
+         *
+         * 관련된 것들 - LogTraceFilterHandler.java // DynamicProxyFilterConfig.java
          */
     }
 }
